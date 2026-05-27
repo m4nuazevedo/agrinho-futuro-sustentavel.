@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte e Sustentavel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="topo">
+        <h1>Agro Forte, Futuro Sustentavel</h1>
+        <p>O equilibrio entre producao e meio ambiente</p>
+        <button id="btnSaibaMais">SAIBA MAIS..</button>
+        
+        <div id="infoExtras" class="hidden">
+            <p>Dados de 2026 indicam que a tecnologia reduziu em 30% o uso de agua no campo.</p>
+        </div>
+    </section>
+
+    <div class="container-baloes">
+        <div class="balao" onclick="mostrarDetalhes('detalhe1')">
+            <h3>Producao</h3>
+            <p>Clique para ver mais</p>
+            <div id="detalhe1" class="detalhe hidden">
+                Tecnologia de precisao para colheitas recordes sem degradar o solo.
+            </div>
+        </div>
+
+        <div class="balao" onclick="mostrarDetalhes('detalhe2')">
+            <h3>Natureza</h3>
+            <p>Clique para ver mais</p>
+            <div id="detalhe2" class="detalhe hidden">
+                Preservacao de matas ciliares e biodiversidade local.
+            </div>
+        </div>
+
+        <div class="balao" onclick="mostrarDetalhes('detalhe3')">
+            <h3>Futuro</h3>
+            <p>Clique para ver mais</p>
+            <div id="detalhe3" class="detalhe hidden">
+                Energia limpa e sistemas de carbono zero no agronegocio.
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

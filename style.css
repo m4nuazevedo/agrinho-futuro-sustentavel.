@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f8ff; /* Azul bem clarinho de fundo */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo {
+    text-align: center;
+    padding: 50px;
+    background-color: #90ee90; /* Verde claro */
+    width: 100%;
+    color: #004080; /* Azul escuro para contraste */
+}
+
+button {
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container-baloes {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.balao {
+    background-color: #ffffff;
+    border: 3px solid #90ee90;
+    padding: 20px;
+    border-radius: 50px; /* Formato de balao */
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.balao:hover {
+    border-color: #007bff;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.detalhe {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #0056b3;
+    font-style: italic;
+}
+
+#infoExtras {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    border: 1px dashed #007bff;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /* Imagem de fundo cobrindo toda a tela */
+    background-image: linear-gradient(rgba(240, 248, 255, 0.8), rgba(240, 248, 255, 0.8)), 
+                      url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* A imagem fica parada enquanto voce rola */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.topo {
+    text-align: center;
+    padding: 60px 20px;
+    /* Verde clarinho com transparencia para aparecer o fundo */
+    background-color: rgba(144, 238, 144, 0.9); 
+    width: 100%;
+    color: #004080;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Ajuste nos baloes para ganharem mais destaque sobre o fundo */
+.balao {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 3px solid #90ee90;
+    padding: 25px;
+    border-radius: 50px;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
